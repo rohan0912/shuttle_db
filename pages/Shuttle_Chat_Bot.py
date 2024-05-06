@@ -15,16 +15,6 @@ st.set_page_config(layout="wide")
 
 st.title("Shuttle Chat Bot")
 
-'''
-def speak(text):
-    engine = pyttsx3.init()
-    engine.say(text)
-    engine.runAndWait()
-
-def threaded_speech(text):
-    thread = threading.Thread(target=speak, args=(text,))
-    thread.start()
-'''
 @st.cache_data
 def load_data(filepath):
     df = pd.read_csv(filepath)
