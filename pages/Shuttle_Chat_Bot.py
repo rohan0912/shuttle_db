@@ -119,7 +119,7 @@ if prompt := st.chat_input("Enter your query:"):
         st.markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-    filepath = 'C:/Users/rohan/Downloads/tr1.csv'  # Update this path
+    filepath = './data/tr1.csv'  # Update this path
     df = load_data(filepath)
 
     response = query_data(df, prompt) if any(

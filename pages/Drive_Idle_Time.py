@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 
 st.title("Fairfield Inn & Suites Raleigh - Durham Airport/Research Triangle Park")
 st.write(f"""**2750 Slater Rd, Morrisville, NC 27560, USA**""")
-st.image('C:/Users/rohan/Downloads/ff.jpg', caption='Sunrise by the mountains', width=1200)
+st.image('./data/ff.jpg', caption='Sunrise by the mountains', width=1200)
 
 
 # FUNCTION TO LOAD AND PROCESS DATA
@@ -19,7 +19,7 @@ def load_data(filepath):
     return data
 
 
-data = load_data('C:/Users/rohan/Downloads/FINAL/second.csv')
+data = load_data('./data/second.csv')
 
 
 # DEVICE AND DATE FILTER

@@ -5,7 +5,7 @@ import numpy as np
 import plotly.express as px
 
 # Load the data
-data_path = 'C:/Users/rohan/Downloads/FINAL/second.csv'
+data_path = './data/second.csv'
 data = pd.read_csv(data_path)
 
 # Convert 'Start Datetime' to datetime

@@ -11,7 +11,7 @@ st.set_page_config(layout="wide", page_title="Airport Shuttle Dashboard", page_i
 
 @st.cache_data
 def load_data():
-    path = "C:/Users/rohan/Downloads/FINAL/test1.csv"
+    path = "./data/test1.csv"
     if not os.path.isfile(path):
         path = f"https://github.com/streamlit/demo-uber-nyc-pickups/raw/main/{path}"
     data = pd.read_csv(
@@ -93,7 +93,7 @@ col2.metric("Total Trips", f"{v_count}", "w%")
 col3.metric("🟢 Start Time", f"{first_value}", "20%")
 col4.metric("🔴 End Time", f"{last_value}", "20%")
 with col1:
-    st.image('C:/Users/rohan/Downloads/rrf1.jpeg')
+    st.image('./data/rrf1.jpeg')
 
 st.markdown('###')
 chart_data = histdata_by_hour(filtered_data)
