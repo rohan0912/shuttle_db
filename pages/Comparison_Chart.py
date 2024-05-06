@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import numpy as np
-import plotly.express as px
+import plotly as px
 
 # Load the data
 data_path = './data/second.csv'

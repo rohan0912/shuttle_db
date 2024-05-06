@@ -4,7 +4,7 @@ from dateutil import parser
 import re
 import time
 import streamlit as st
-import pyttsx3
+#import pyttsx3
 import threading
 
 
@@ -15,6 +15,7 @@ st.set_page_config(layout="wide")
 
 st.title("Shuttle Chat Bot")
 
+'''
 def speak(text):
     engine = pyttsx3.init()
     engine.say(text)
@@ -23,7 +24,7 @@ def speak(text):
 def threaded_speech(text):
     thread = threading.Thread(target=speak, args=(text,))
     thread.start()
-
+'''
 @st.cache_data
 def load_data(filepath):
     df = pd.read_csv(filepath)
