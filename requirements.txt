@@ -1,8 +1,8 @@
-altair==latest
-numpy==latest
-pandas==latest
-pydeck==latest
-streamlit==latest
-python-dateutil==latest
-pyttsx3==latest
-plotly==latest
+altair
+numpy
+pandas
+pydeck
+streamlit
+python-dateutil
+pyttsx3
+plotly
